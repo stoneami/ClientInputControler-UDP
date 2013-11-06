@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#22220000">
+    
+    <!-- Message -->
+
+    <TextView
+        android:id="@+id/msg_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="@string/msg_label"/>
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/msg_label"
+        android:hint="@string/hint_for_msg"
+         />
+
+    <!-- send button -->
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/msg"
+        android:layout_alignParentRight="true"
+        android:text="@string/send_to_server" />
+
+    <!-- click buttons -->
+    <!-- line 1 -->
+
+    <Button
+        android:id="@+id/bt_click"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msg_label"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/click" />
+
+    <Button
+        android:id="@+id/bt_right_click"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msg_label"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/bt_click"
+        android:text="@string/right_click" />
+
+    <Button
+        android:id="@+id/bt_double_click"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msg_label"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/bt_right_click"
+        android:text="@string/double_click" />
+
+   <com.stone.widget.TouchPadView 
+        android:id="@+id/touch_pad"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/bt_click"
+        android:background="#33003333"/>
+   
+    <!-- line 2 -->
+
+    <Button
+        android:id="@+id/bt_up"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/bt_click"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/up" 
+        android:visibility="gone"/>
+
+    <!-- line 3 -->
+
+    <Button
+        android:id="@+id/bt_left"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/bt_up"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/left" 
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/bt_right"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bt_up"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/bt_left"
+        android:text="@string/right" 
+        android:visibility="gone"/>
+
+    <!-- line 4 -->
+
+    <Button
+        android:id="@+id/bt_down"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/bt_left"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/down" 
+        android:visibility="gone"/>
+
+    <include layout="@layout/input" />
+
+</RelativeLayout>

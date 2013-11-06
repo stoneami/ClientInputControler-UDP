@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">ClientInputControler-UDP</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Input Control UDP Client</string>
+    <string name="send_to_server">Send</string>
+    <string name="server_address">Server IP:</string>
+    <string name="server_port">Server Port:</string>
+    <string name="hint_for_ip">Please input server IP</string>
+    <string name="msg_label">Please input command: </string>
+    <string name="hint_for_port">Please input server port</string>
+    <string name="hint_for_msg">Please input command</string>
+    <string name="click">S-Click</string>
+    <string name="up">Up</string>
+    <string name="double_click">D-Click</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="down">Down</string>
+    <string name="right_click">R-Click</string>
+    <string name="toast_invalid_ip">Server information is invalid, using previous valid settings!</string>
+
+    <string name="label_accuracy">Accuracy：</string>
+</resources>

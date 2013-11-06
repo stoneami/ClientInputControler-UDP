@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<!-- IP -->
+    
+    <TextView
+        android:id="@+id/ip_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/server_address"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ip_label"
+        android:inputType="number"
+        android:hint="@string/hint_for_ip"
+        android:text="@string/default_ip"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <!-- Port -->
+
+    <TextView
+        android:id="@+id/port_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ip_label"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/server_port"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ip"
+        android:layout_below="@id/ip_label"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/port_label"
+        android:hint="@string/hint_for_port"
+        android:inputType="number"
+        android:text="@string/default_port"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <!-- step -->
+
+    <TextView
+        android:id="@+id/label_accurycy"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_below="@id/port_label"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_accuracy" />
+    
+    <SeekBar
+        android:id="@+id/sb_step"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/port_label"
+        android:layout_toRightOf="@id/label_accurycy"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:max="@string/max_step_value"
+        android:progress="@string/default_step_value" />
+
+</RelativeLayout>

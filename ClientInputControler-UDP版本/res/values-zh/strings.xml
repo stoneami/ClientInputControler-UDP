@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">输入控制UDP客户端</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_main">UDP输入控制</string>
+    <string name="send_to_server">发  送</string>
+    <string name="server_address">服务器IP:</string>
+    <string name="server_port">服务器端口:</string>
+    <string name="hint_for_ip">请输入服务器IP地址</string>
+    <string name="msg_label">消  息: </string>
+    <string name="hint_for_port">请输入服务器端口</string>
+    <string name="hint_for_msg">请输入消息</string>
+    <string name="click">单  击</string>
+    <string name="up">向  上</string>
+    <string name="double_click">双  击</string>
+    <string name="left">向  左</string>
+    <string name="right">向  右</string>
+    <string name="down">向  下</string>
+    <string name="right_click">右  击</string>
+    <string name="toast_invalid_ip">服务器信息不正确，使用之前的配置信息!</string>
+    
+    <string name="label_accuracy">精度：</string>
+
+</resources>
